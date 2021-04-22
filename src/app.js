@@ -26,6 +26,10 @@ app.get("/games", (req, res) => {
     res.render("games.hbs")
 })
 
+app.get("/youtube", (req, res) => {
+    res.render("youtube.hbs")
+})
+
 app.get("*", (req, res) => {
     res.render('404Error.hbs')
 })

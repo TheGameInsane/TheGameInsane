@@ -77,17 +77,17 @@ body {
     align-items: flex-start;
 }
 
-.main_header_left p {
+.main_p {
     font-size: 2rem;
 }
 
-.main_header_left h1 {
+.main_h1 {
     font-size: 4rem;
     margin: 1rem 0 4rem 0;
     text-transform: capitalize;
 }
 
-.main_header_left button {
+.bton {
     border: none;
     padding: 0.8rem 1rem;
     font-size: 1.4rem;
@@ -97,16 +97,29 @@ body {
     outline: none;
 }
 
-.main_header_left button:hover {
+.bton:hover {
     box-shadow: 0 8px 6px -6px var(--main-bg);
 }
 
 .main_header_right {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main_header_middle {
+    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}   
+}
+
+.carousel-inner {
+    border-radius: 5px;
+}
 
 footer {
     width: 100%;

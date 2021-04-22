@@ -21,14 +21,41 @@
 </head>
 <body>
     <!-- Navbar -->
-    {{>navbar}}
+<nav class="navbar navbar-expand-lg main_menu">
+    <a class="navbar-brand" href="/">
+        <div class="mr-3 ml-3">
+        <img src="./images/Game.svg" alt="TheGameInsane">
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="/"><span class="non-current">Home</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/games"><span class="non-current">Games</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/youtube"><span class="current">Youtube</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/about"><span class="non-current">About TGI</span></a>
+        </li>
+        
+    </ul>
+    </div>
+</nav>
 
 <!-- Main Body   -->
 <div class="row">
   <!-- Left -->
   <div class="col-md-6 col-12 main_header_left">
     <p class="main_p">Welcome to TheGameInsane World</p>
-    <h1 class="main_h1">Get The <span style="color: rgb(97, 97, 255);">Latest</span> games made by <span style="font-weight: bold;">TheGameInsane</span></h1>
+    <h1 class="main_h1">Get The <span style="color: rgb(97, 97, 255);">Latest Updates</span> of my youtube</h1>
     <a href="/games"><button class="bton">Check Now</button></a>
     <a href="/games"></a>
   </div>
@@ -37,11 +64,11 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a href="/games" target="_blank">
-          <img class="w-100" src="https://cdn.discordapp.com/attachments/747451632534683679/834783546547503154/Cubenner.png" alt="Cubenner">
+          <a href="https://youtu.be/sgVFK8JKsmo" target="_blank">
+          <img class="w-100" src="https://cdn.discordapp.com/attachments/747451632534683679/834659549456629780/GTAVThumbnail5.png" alt="Gta 5 #5">
           </a>
         </div>
-        {{!-- <div class="carousel-item">
+        <div class="carousel-item">
           <a href="https://youtu.be/Na3XQo1Pu_8" target="_blank">
           <img class="w-100" src="https://cdn.discordapp.com/attachments/747451632534683679/834659239036846111/AlienIsolation4.png" alt="AI #4">
           </a>
@@ -50,7 +77,7 @@
           <a href="https://youtu.be/-fWkISAoUR4" target="_blank">
           <img class="w-100" src="https://cdn.discordapp.com/attachments/747451632534683679/834659835977924608/Minecraft_1_Starter_House.png" alt="Minecraft">
           </a>
-        </div> --}}
+        </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -62,7 +89,6 @@
       </a>
     </div>
 </div>
-
 
 <!-- Footer -->
 {{>footer}}
