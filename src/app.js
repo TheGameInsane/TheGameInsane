@@ -30,6 +30,10 @@ app.get("/youtube", (req, res) => {
     res.render("youtube.hbs")
 })
 
+app.get("/top.gg", (req, res) => {
+    res.status(200)
+})
+
 app.get("*", (req, res) => {
     res.render('404Error.hbs')
 })
